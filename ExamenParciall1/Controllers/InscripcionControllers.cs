@@ -9,6 +9,7 @@ namespace ExamenParciall1.Controllers
 {
     public class InscripcionControllers
     {
+
         public bool Guardar(Inscripcion entity)
         {
             bool paso = false;
