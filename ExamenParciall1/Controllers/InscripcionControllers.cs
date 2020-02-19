@@ -12,6 +12,7 @@ namespace ExamenParciall1.Controllers
 
         public bool Guardar(Inscripcion entity)
         {
+
             bool paso = false;
             Contexto db = new Contexto();
             try
