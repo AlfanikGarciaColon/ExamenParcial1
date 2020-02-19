@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ExamenParciall1.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +9,11 @@ namespace ExamenParcial1.Data
 {
         public class Contexto : DbContext
         {
-       
-            protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public DbSet<Inscripcion> Inscripcion { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             {
             optionsBuilder.UseSqlite(@"Data Source=Database/Articulos.Db");
             }
         }
-    
 }
